@@ -31,5 +31,8 @@
         "odata": {
             "version": "v4"
         }
+    },
+    "devDependencies": {
+        "sqlite3": "^5.0.0"
     }
 }
