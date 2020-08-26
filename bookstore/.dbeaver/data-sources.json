@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-1742817f653-36a5a7dabaf9b7c": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "sqlite.db",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/Users/halilural/Documents/development/SapCloud/CAP/java/products-service/bookstore/sqlite.db",
+				"url": "jdbc:sqlite:/Users/halilural/Documents/development/SapCloud/CAP/java/products-service/bookstore/sqlite.db",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
