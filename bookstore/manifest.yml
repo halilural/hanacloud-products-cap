@@ -1,0 +1,7 @@
+---
+    applications:
+    - name: bookstore
+      path: srv/target/cds-services-archetype-exec.jar
+      random-route: true
+      services:
+      - bookstore-hana
