@@ -19,37 +19,22 @@
     },
     "cds": {
         "build": {
-            "target": ".",
-            "tasks": [
-                {
-                    "src": "db",
-                    "for": "hana",
-                    "options": {
-                        "model": [
-                            "db",
-                            "srv"
-                        ]
-                    }
-                },
-                {
-                    "src": "srv",
-                    "for": "node-cf",
-                    "options": {
-                        "model": [
-                            "db",
-                            "srv"
-                        ]
-                    }
-                }
-            ]
-        },
-        "hana": {
-            "deploy-format": "hdbtable"
+            "target": "."
         },
         "requires": {
             "db": {
-                "kind": "hana"
+                "kind": "sqlite",
+                "model": [
+                    "db",
+                    "srv"
+                ],
+                "credentials": {
+                    "database": "sqlite.db"
+                }
             }
+        },
+        "odata": {
+            "version": "v4"
         }
     },
     "devDependencies": {
